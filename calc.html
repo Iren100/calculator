@@ -6,34 +6,32 @@
 </head>
 <body bgcolor="#333300">
 	<center> <br>		
-		<div style = whight:263px; background = "FFF8DC">
-			<form class = "top" name = "Calculator">
-				<input name = "display" placeholder="0" style = "width: 255px; height: 60px; text-align:right; font-size: 30; border-radius:8px; margin:6px" readonly/>			
-				<br>
-				<input type="button" class = "margin" value = "7" OnClick = Numbers('7')>
-				<input type="button" value = "8" OnClick = Numbers('8')>
-				<input type="button" class = "margin" value = "9" OnClick = Numbers('9')>
-				<input type="button" class = "actions" value = "+" OnClick = Actions("+")>
-				<br>
-				<input type="button" class = "margin" value = "4" OnClick = Numbers('4')>
-				<input type="button" value = "5" OnClick = Numbers('5')>
-				<input type="button" class = "margin" value = "6" OnClick = Numbers('6')>
-				<input type="button" class = "actions" value = "-" OnClick = Actions("-")>
-				<br>
-				<input type="button" class = "margin" value = "1" OnClick = Numbers('1')>
-				<input type="button" value = "2" OnClick = Numbers('2')>
-				<input type="button" class = "margin" value = "3" OnClick = Numbers('3')>
-				<input type="button" class = "actions" value = "*" OnClick = Actions("*")>
-				<br>			
-				<input type="button" class = "margin" value = "CE" OnClick = CE()>
-				<input type="button" value = "0" OnClick = Numbers('0')>
-				<input type="button" class = "margin" value = "." OnClick = "document.Calculator.display.value += '.'">
-				<input type="button" class = "actions" value = "/" OnClick = Actions("/")>
-				<br>
-				<input type="button" value = "C" OnClick = "Clear()" style = "width: 127px;">
-				<input type="button" class = "margin" value = "=" OnClick = DelNull() style = "width: 127px;">			
-			</form>
-		</div>
+		<form class = "top" name = "Calculator">
+			<input name = "display" placeholder="0" style = "width: 255px; height: 60px; text-align:right; font-size: 30; border-radius:8px; margin:6px" readonly/>			
+			<br>
+			<input type="button" class = "margin" value = "7" OnClick = Numbers('7')>
+			<input type="button" value = "8" OnClick = Numbers('8')>
+			<input type="button" class = "margin" value = "9" OnClick = Numbers('9')>
+			<input type="button" class = "actions" value = "+" OnClick = Actions("+")>
+			<br>
+			<input type="button" class = "margin" value = "4" OnClick = Numbers('4')>
+			<input type="button" value = "5" OnClick = Numbers('5')>
+			<input type="button" class = "margin" value = "6" OnClick = Numbers('6')>
+			<input type="button" class = "actions" value = "-" OnClick = Actions("-")>
+			<br>
+			<input type="button" class = "margin" value = "1" OnClick = Numbers('1')>
+			<input type="button" value = "2" OnClick = Numbers('2')>
+			<input type="button" class = "margin" value = "3" OnClick = Numbers('3')>
+			<input type="button" class = "actions" value = "*" OnClick = Actions("*")>
+			<br>			
+			<input type="button" class = "margin" value = "CE" OnClick = CE()>
+			<input type="button" value = "0" OnClick = Numbers('0')>
+			<input type="button" class = "margin" value = "." OnClick = "document.Calculator.display.value += '.'">
+			<input type="button" class = "actions" value = "/" OnClick = Actions("/")>
+			<br>
+			<input type="button" value = "C" OnClick = "Clear()" style = "width: 127px;">
+			<input type="button" class = "margin" value = "=" OnClick = DelNull() style = "width: 127px;">			
+		</form>
 	</center>
 	<script type="text/javascript">		
 		TimeOut();	
