@@ -82,6 +82,7 @@ function TimeOut(){
 function OnClicks(){
 	CALC_DISPLAY.onkeypress = () => {
   		Str(14);
+		if (event.keyCode===61) DelNull();
   		return (event.keyCode>39)&&(event.keyCode<58)&&(event.keyCode!=44);
 	}
 	CALC_DISPLAY.oninput = () => {
