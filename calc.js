@@ -99,7 +99,7 @@ function OnClicks(){
 }
 
 function Fix(n){
-	if (n.indexOf("9999999999") != -1)
+	if ((n.indexOf("999999999") != -1) && (n.indexOf(".") != -1))
 		return parseFloat(n) + 0.0000000000001;
 	return parseFloat(n);
 }
