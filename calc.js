@@ -31,7 +31,7 @@ function Value() {
 }
 
 function Valid(){
-	const ARR = [".","-","+","*","/"];
+	const ARR = [".","-","+","*","/","="];
 	let el1 = CALC_DISPLAY.value.charAt(CALC_DISPLAY.value.length - 2);
 	let pos = ARR.indexOf(el1);
 	let el2 = CALC_DISPLAY.value.charAt(CALC_DISPLAY.value.length - 1);
