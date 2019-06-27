@@ -60,6 +60,7 @@ Str = (l = 15) => {
 function DNull(){
 	const ARR = ["","-","+","*","/"];
 	let el0 = CALC_DISPLAY.value.charAt(CALC_DISPLAY.value.length - 1);
+	if (el0 === ".") return;	
 	let el1 = CALC_DISPLAY.value.charAt(CALC_DISPLAY.value.length - 3);
 	let el2 = CALC_DISPLAY.value.charAt(CALC_DISPLAY.value.length - 2);
 	if  ((ARR.indexOf(el1) != -1) && (el2 ==="0"))
